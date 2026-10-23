@@ -10,7 +10,7 @@ reusable piece when you do connect one.
 ## Run order
 
 ```powershell
-cd pos-ingestion/scripts
+cd unifi-protect-point-of-sale-event-ingestion/scripts
 
 # once
 ../../shared/scripts/Initialize-UnifiSecret.ps1 -ConfigPath ../config/unifi.config.json
