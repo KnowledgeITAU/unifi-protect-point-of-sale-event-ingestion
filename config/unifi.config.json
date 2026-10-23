@@ -1,0 +1,33 @@
+{
+  "$comment": "Connection profiles for the UniFi Protect POS ingestion POC. No secrets here: the API key lives in the SecretManagement vault named below. Switch target by changing activeProfile, or pass -ProfileName to any script. One profile per console: the integration APIs are LAN-only, so each console needs its own key and its own reachable address.",
+
+  "activeProfile": "lawson",
+
+  "profiles": {
+    "lawson": {
+      "$comment": "Lawson, UDM-PRO-SE, MAC 60:22:32:13:4D:E9. This is the console from design.md and the one reachable at 192.168.1.1 from the dev machine. Self-signed cert, hence skipCertificateCheck (the equivalent of curl -k). Verified 18 Oct 2026: UniFi OS 5.1.132, Network 10.6.106, Protect 7.3.70.",
+      "baseUrl": "https://192.168.1.1",
+      "skipCertificateCheck": true,
+      "vaultName": "UnifiPoc",
+      "secretName": "UnifiApiKey-Lawson"
+    },
+
+    "$template": {
+      "$comment": "Copy this block, rename it to the console name, and fill in the LAN address to add another site. Each console issues its own API key, so give each one a distinct secretName and store it with Initialize-UnifiSecret.ps1 -ProfileName <name>.",
+      "baseUrl": "https://CONSOLE-LAN-IP",
+      "skipCertificateCheck": true,
+      "vaultName": "UnifiPoc",
+      "secretName": "UnifiApiKey-CHANGEME"
+    }
+  },
+
+  "$cloudNote": "There is deliberately no cloud profile. Verified 18 Oct 2026: https://unifi.ui.com/proxy/consoles/<id>/... returns HTTP 302 to account.ui.com/login when given X-API-KEY, because that path is browser-SSO only. The Site Manager API at api.ui.com DOES accept an X-API-KEY cloud key, but it exposes only read-only fleet inventory (hosts, sites, devices), not the Protect or Network integration APIs. For off-site access use a VPN or UniFi Teleport into the site LAN.",
+
+  "pos": {
+    "$comment": "POS ingestion settings. cameraId is filled in after running Get-UnifiCameras.ps1. alarmTriggerId is only used by the alarm-manager fallback transport.",
+    "cameraId": "",
+    "alarmTriggerId": "pos-register-1",
+    "registerName": "Register 1",
+    "currency": "AUD"
+  }
+}

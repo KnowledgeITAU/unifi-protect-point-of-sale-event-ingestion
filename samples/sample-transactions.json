@@ -1,0 +1,86 @@
+{
+  "$comment": "Synthetic POS transactions for the ingestion POC. No real customer or payment data. Amounts in AUD. Scenario names are what you pass to Send-PosEvent.ps1 -Scenario.",
+
+  "transactions": [
+    {
+      "scenario": "sale",
+      "transactionId": "TXN-100001",
+      "transactionType": "SALE",
+      "operator": "Alex T",
+      "paymentMethod": "CARD",
+      "subtotal": 42.73,
+      "tax": 4.27,
+      "total": 47.0,
+      "items": [
+        { "name": "Flat White", "quantity": 2, "unitPrice": 5.5 },
+        { "name": "Ham and Cheese Croissant", "quantity": 1, "unitPrice": 8.95 },
+        { "name": "House Blend Beans 500g", "quantity": 1, "unitPrice": 22.78 }
+      ]
+    },
+    {
+      "scenario": "cash-sale",
+      "transactionId": "TXN-100002",
+      "transactionType": "SALE",
+      "operator": "Alex T",
+      "paymentMethod": "CASH",
+      "subtotal": 12.27,
+      "tax": 1.23,
+      "total": 13.5,
+      "items": [
+        { "name": "Long Black", "quantity": 1, "unitPrice": 5.0 },
+        { "name": "Banana Bread", "quantity": 1, "unitPrice": 8.5 }
+      ]
+    },
+    {
+      "scenario": "void",
+      "transactionId": "TXN-100003",
+      "transactionType": "VOID",
+      "operator": "Sam R",
+      "paymentMethod": "CARD",
+      "subtotal": 18.18,
+      "tax": 1.82,
+      "total": 20.0,
+      "items": [
+        { "name": "Toasted Sandwich", "quantity": 2, "unitPrice": 10.0 }
+      ]
+    },
+    {
+      "scenario": "refund",
+      "transactionId": "TXN-100004",
+      "transactionType": "REFUND",
+      "operator": "Sam R",
+      "paymentMethod": "CARD",
+      "subtotal": -10.0,
+      "tax": -1.0,
+      "total": -11.0,
+      "items": [
+        { "name": "House Blend Beans 500g", "quantity": -1, "unitPrice": 11.0 }
+      ]
+    },
+    {
+      "scenario": "no-sale",
+      "transactionId": "TXN-100005",
+      "transactionType": "NO_SALE",
+      "operator": "Alex T",
+      "paymentMethod": "NONE",
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.0,
+      "items": []
+    },
+    {
+      "scenario": "large-discount",
+      "transactionId": "TXN-100006",
+      "transactionType": "SALE",
+      "operator": "Jordan K",
+      "paymentMethod": "CARD",
+      "subtotal": 90.91,
+      "tax": 9.09,
+      "total": 100.0,
+      "items": [
+        { "name": "Catering Platter", "quantity": 1, "unitPrice": 150.0 },
+        { "name": "Staff Discount", "quantity": 1, "unitPrice": -50.0 }
+      ]
+    }
+  ]
+}
