@@ -24,10 +24,10 @@
     password-protected store. Omit for an interactive-password store.
 
 .EXAMPLE
-    ./Initialize-UnifiSecret.ps1 -ConfigPath ../../pos-ingestion/config/unifi.config.json
+    ./Initialize-UnifiSecret.ps1 -ConfigPath ../../unifi-protect-point-of-sale-event-ingestion/config/unifi.config.json
 
 .EXAMPLE
-    ./Initialize-UnifiSecret.ps1 -ConfigPath ../../pos-ingestion/config/unifi.config.json -ProfileName cloud
+    ./Initialize-UnifiSecret.ps1 -ConfigPath ../../unifi-protect-point-of-sale-event-ingestion/config/unifi.config.json -ProfileName cloud
 #>
 [CmdletBinding()]
 param(
@@ -113,4 +113,4 @@ Write-Host ''
 Write-Host "Stored a $keyLength-character key as '$($prof.SecretName)' in vault '$($prof.VaultName)'." -ForegroundColor Green
 Write-Host ''
 Write-Host 'Next step: verify connectivity with' -ForegroundColor Cyan
-Write-Host '  pos-ingestion/scripts/Test-UnifiConnection.ps1' -ForegroundColor White
+Write-Host '  unifi-protect-point-of-sale-event-ingestion/scripts/Test-UnifiConnection.ps1' -ForegroundColor White

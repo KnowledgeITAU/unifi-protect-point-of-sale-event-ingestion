@@ -30,11 +30,11 @@
     ./Test-UnifiApiKey.ps1
 
 .EXAMPLE
-    ./Test-UnifiApiKey.ps1 -ConfigPath ../../pos-ingestion/config/unifi.config.json -Interactive
+    ./Test-UnifiApiKey.ps1 -ConfigPath ../unifi-protect-point-of-sale-event-ingestion/config/unifi.config.json -Interactive
 #>
 [CmdletBinding()]
 param(
-    [string] $ConfigPath = (Join-Path $PSScriptRoot '..' '..' 'pos-ingestion' 'config' 'unifi.config.json'),
+    [string] $ConfigPath = (Join-Path $PSScriptRoot '..' '..' 'unifi-protect-point-of-sale-event-ingestion' 'config' 'unifi.config.json'),
     [string] $ProfileName,
 
     # Prompt for a key to test instead of reading the vault. Use this to check a freshly

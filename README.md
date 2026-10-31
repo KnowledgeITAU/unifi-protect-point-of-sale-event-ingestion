@@ -13,7 +13,7 @@ reusable piece when you do connect one.
 cd unifi-protect-point-of-sale-event-ingestion/scripts
 
 # once
-../../shared/scripts/Initialize-UnifiSecret.ps1 -ConfigPath ../config/unifi.config.json
+./shared/scripts/Initialize-UnifiSecret.ps1 -ConfigPath ./config/unifi.config.json
 
 ./Test-UnifiConnection.ps1                                   # does the key work at all
 ./Get-UnifiCameras.ps1                                       # list cameras
