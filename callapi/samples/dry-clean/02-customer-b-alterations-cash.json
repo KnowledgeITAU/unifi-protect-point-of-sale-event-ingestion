@@ -1,0 +1,13 @@
+{
+  "customerMobile": "0491570157",
+  "delayBeforeSeconds": 8,
+  "type": "sale",
+  "amount": 55.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Trouser Hem", "quantity": 2 },
+    { "title": "Zip Replacement", "quantity": 1 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["cash"]
+}

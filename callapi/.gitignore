@@ -1,0 +1,11 @@
+# Never commit real connection details
+.env
+*.env
+*.local.*
+*.secret*
+
+# Batch de-dupe ledger (contains transaction ids)
+.sent-ledger.json
+
+# Generated load-test batches
+samples/high-volume/generated-*.json

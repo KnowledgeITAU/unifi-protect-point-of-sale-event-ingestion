@@ -1,0 +1,147 @@
+[
+  {
+    "customerMobile": "0491570156",
+    "saleTime": "yesterday 18:25",
+    "type": "sale",
+    "amount": 61.5,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Business Shirt - Launder and Press",
+        "quantity": 5
+      },
+      {
+        "title": "Two-Piece Suit - Dry Clean",
+        "quantity": 1
+      },
+      {
+        "title": "Tie - Dry Clean",
+        "quantity": 2
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "card"
+    ]
+  },
+  {
+    "customerMobile": "0491570157",
+    "saleTime": "yesterday 19:00",
+    "type": "sale",
+    "amount": 55.0,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Trouser Hem",
+        "quantity": 2
+      },
+      {
+        "title": "Zip Replacement",
+        "quantity": 1
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "cash"
+    ]
+  },
+  {
+    "customerMobile": "0491570156",
+    "saleTime": "yesterday 19:40",
+    "type": "sale",
+    "amount": 48.0,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Wool Overcoat - Dry Clean",
+        "quantity": 1
+      },
+      {
+        "title": "Express Same-Day Service",
+        "quantity": 1
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "eftpos"
+    ]
+  },
+  {
+    "customerMobile": "0491570157",
+    "saleTime": "yesterday 20:20",
+    "type": "sale",
+    "amount": 120.0,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Doona King Size - Clean",
+        "quantity": 1
+      },
+      {
+        "title": "Curtain Panel - Dry Clean",
+        "quantity": 4
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "card"
+    ]
+  },
+  {
+    "customerMobile": "0491570157",
+    "saleTime": "yesterday 20:55",
+    "type": "sale",
+    "amount": 280.0,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Wedding Dress - Clean and Preserve",
+        "quantity": 1
+      },
+      {
+        "title": "Garment Storage Box",
+        "quantity": 1
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "card",
+      "cash"
+    ]
+  },
+  {
+    "customerMobile": "0491570156",
+    "saleTime": "yesterday 21:45",
+    "type": "refund",
+    "amount": 18.0,
+    "currency": "AUD",
+    "lineItems": [
+      {
+        "title": "Silk Blouse - Dry Clean (damage claim)",
+        "quantity": 1
+      }
+    ],
+    "location": {
+      "id": "counter-1",
+      "name": "Front Counter"
+    },
+    "paymentTypes": [
+      "card"
+    ]
+  }
+]

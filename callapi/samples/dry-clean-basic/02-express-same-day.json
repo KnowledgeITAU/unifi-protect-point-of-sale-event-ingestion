@@ -1,0 +1,12 @@
+{
+  "type": "sale",
+  "externalId": "DC-0002",
+  "amount": 48.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Wool Overcoat - Dry Clean", "quantity": 1 },
+    { "title": "Express Same-Day Service", "quantity": 1 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["eftpos"]
+}

@@ -1,0 +1,33 @@
+# VS Code REST Client (humao.rest-client).
+# Every value is prompted when you click "Send Request". Nothing is stored in this file.
+# Self-signed console cert: set "rest-client.certificates" or accept the warning.
+
+### 1. List cameras (copy the id of the camera at the register)
+# @prompt baseUrl Console address, e.g. https://192.168.1.1
+# @prompt apiKey Protect API key
+GET {{baseUrl}}/proxy/protect/integration/v1/cameras
+X-API-KEY: {{apiKey}}
+Accept: application/json
+
+### 2. Ingest a POS transaction
+# @prompt baseUrl Console address, e.g. https://192.168.1.1
+# @prompt apiKey Protect API key
+# @prompt cameraId Camera id from request 1
+POST {{baseUrl}}/proxy/protect/integration/v1/pos/cameras/{{cameraId}}/transactions
+X-API-KEY: {{apiKey}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "type": "sale",
+  "externalId": "DEMO-{{$timestamp}}",
+  "amount": 47.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Flat White", "quantity": 2 },
+    { "title": "Ham and Cheese Croissant", "quantity": 1 },
+    { "title": "House Blend Beans 500g", "quantity": 1 }
+  ],
+  "location": { "id": "register-1", "name": "Front Counter" },
+  "paymentTypes": ["card"]
+}

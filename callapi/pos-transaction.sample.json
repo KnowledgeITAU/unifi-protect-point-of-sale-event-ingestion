@@ -1,0 +1,13 @@
+{
+  "type": "sale",
+  "externalId": "DEMO-0001",
+  "amount": 47.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Flat White", "quantity": 2 },
+    { "title": "Ham and Cheese Croissant", "quantity": 1 },
+    { "title": "House Blend Beans 500g", "quantity": 1 }
+  ],
+  "location": { "id": "register-1", "name": "Front Counter" },
+  "paymentTypes": ["card"]
+}

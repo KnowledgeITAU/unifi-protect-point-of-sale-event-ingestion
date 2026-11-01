@@ -1,0 +1,12 @@
+{
+  "type": "sale",
+  "externalId": "DC-0004",
+  "amount": 120.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Doona King Size - Clean", "quantity": 1 },
+    { "title": "Curtain Panel - Dry Clean", "quantity": 4 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["card"]
+}
