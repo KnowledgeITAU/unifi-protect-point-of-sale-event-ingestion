@@ -1,0 +1,12 @@
+{
+  "type": "sale",
+  "externalId": "DC-0005",
+  "amount": 280.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Wedding Dress - Clean and Preserve", "quantity": 1 },
+    { "title": "Garment Storage Box", "quantity": 1 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["card", "cash"]
+}

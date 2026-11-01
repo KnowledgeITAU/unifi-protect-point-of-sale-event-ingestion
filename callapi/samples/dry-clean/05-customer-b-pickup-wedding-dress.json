@@ -1,0 +1,13 @@
+{
+  "customerMobile": "0491570157",
+  "delayBeforeSeconds": 10,
+  "type": "sale",
+  "amount": 280.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Wedding Dress - Clean and Preserve", "quantity": 1 },
+    { "title": "Garment Storage Box", "quantity": 1 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["card", "cash"]
+}

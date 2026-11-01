@@ -1,0 +1,11 @@
+{
+  "type": "refund",
+  "externalId": "DC-0006",
+  "amount": 18.00,
+  "currency": "AUD",
+  "lineItems": [
+    { "title": "Silk Blouse - Dry Clean (damage claim)", "quantity": 1 }
+  ],
+  "location": { "id": "counter-1", "name": "Front Counter" },
+  "paymentTypes": ["card"]
+}
