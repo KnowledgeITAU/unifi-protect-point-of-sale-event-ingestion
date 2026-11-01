@@ -47,7 +47,7 @@ pwsh -ExecutionPolicy Bypass -File .\Send-PosTransaction.ps1 -Batch -BodyPath .\
 `Created 6 ... Failed 0`. Run it again and every line shows `skip already sent`.
 
 The sample sales are timed yesterday from 18:25 to 21:45, and Protect only accepts sales from
-the last 24 hours. Run this step before 18:25 or some lines show `REJECTED`.
+the last 24 hours. Run this step before 6:25 pm (any day) or some lines show `REJECTED`.
 To send them again, delete the `.sent-ledger.json` file in this folder.
 
 ## Step 4: See it in Protect
